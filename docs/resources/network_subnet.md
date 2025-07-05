@@ -29,7 +29,7 @@ resource "hcloud_network_subnet" "foonet" {
 - `type` - (Required, string) Type of subnet. `server`, `cloud` or `vswitch`
 - `ip_range` - (Required, string) Range to allocate IPs from. Must be a subnet of the ip_range of the Network and must not overlap with any other subnets or with any destinations in routes.
 - `network_zone` - (Required, string) Name of network zone.
-- `vswitch_id` - (Optional, int) ID of the vswitch, Required if type is `vswitch`
+- `vswitch_id` - (Optional, int) ID of the vswitch (the ID like within the robot, not the VLAN tag itself), Required if type is `vswitch`
 
 ## Attributes Reference
 
